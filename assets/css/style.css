@@ -38,3 +38,7 @@
   align-items: flex-end;
   display: flex;
 }
+
+.main-container {
+  display: flex;
+}
