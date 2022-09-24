@@ -48,8 +48,27 @@
     justify-content: flex-start;
   }
 
+  .work {
+    max-width: 50%;
+  }
+
+  .big-tile {
+   flex: 0 0 100%; /* flex-grow, flex-shrink, flex-basis */
+  }
+
+  .small-tile {
+    flex: 0 0 50%;
+  }
+
+/* PROJECTS CONTAINER -----------------------------------------*/
+  .work-bx {
+    display: flex;
+  }
+
   .work-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
 /* SIDEBAR -----------------------------------------------------*/
@@ -72,15 +91,6 @@
 
   .aside-h1 {
     text-align: right;
-  }
-
-/* PROJECTS CONTAINER -----------------------------------------*/
-  #work-bx {
-    display: flex;
-  }
-
-  .work-container {
-    display: flex;
   }
 
 /* FOOTER -----------------------------------------------------*/
