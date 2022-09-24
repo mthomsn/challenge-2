@@ -1,0 +1,13 @@
+* {
+
+}
+
+:root {
+  --blue: #92cbce;
+}
+
+header {
+  background-color: #32343d;
+  display: flex;
+  
+}
