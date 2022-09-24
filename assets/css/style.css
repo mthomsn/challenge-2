@@ -41,6 +41,17 @@
     display: flex;
   }
 
+  figure {
+    margin: 0;
+  }
+
+  #banner img {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+
+  }
+
 /* MAIN CONTAINER -----------------------------------------------*/
   .main-container {
     display: flex;
@@ -68,7 +79,7 @@
   .work-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content; space-evenly;
   }
 
 /* SIDEBAR -----------------------------------------------------*/
