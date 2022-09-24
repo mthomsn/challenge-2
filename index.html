@@ -4,72 +4,92 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/reset.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Matt Thomsen Portfolio</title>
 </head>
 <body>
-  <header> 
+  <header class="header"> 
     <h1>Matt Thomsen</h1>
+      <nav class="nav-bar">
+        <section>
+          <a href="#">About Me</a>
+          <a href="#">Work</a>
+          <a href="#">Contact Me</a>
+          <a href="#">Resume</a>
+        </section>
+      </nav>
   </header>
-  <nav class="nav-bar">
-    <ul>
-      <li>About Me</li>
-      <li>Work</li>
-      <li>Contact Me</li>
-      <li>Resume</li>
-    </ul>
-  </nav>
   <!-- IMAGE BANNER -->
   <figure id="banner">
     <img src="" alt="">
     <!-- IMAGE BANNER CAPTION BOX -->
     <figcaption></figcaption>
   </figure>
-  <!-- ABOUT ME SIDBAR DISPLAY -->
-  <aside class="about-me">
-    <h1>About Me</h1>
-  </aside>
-  <!-- ABOUT ME CONTENT DISPLAY -->
-  <article class="about-me">
-    <p>Text here</p>
-    <p>More Text</p>
-  <!-- WORK SIDBAR DISPLAY -->
-  </article> 
-  <aside class="work">
-    <h1>Work</h1>  
-  </aside>
-  <!-- WORK PROJECTS DISPLAY -->
-  <main class="work"> /* 
-    <section class="work">
 
+  <!-- MAIN CONTAINER -->
+  <main class="main-container">
+    <!-- ABOUT ME -->
+    <section id="aboutme-bx">
+      <aside class="sidebar-about-me">
+        <h1 class="aside-h1">About Me</h1>
+      </aside>
+      <!-- ABOUT ME CONTENT DISPLAY -->
+      <article class="about-me">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur esse eveniet itaque aliquid dolore officia nesciunt! Ipsum, modi praesentium esse, hic ad, odit itaque nisi ex facere pariatur maxime excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reprehenderit debitis sit autem. Quis nesciunt veniam ab quisquam perspiciatis accusantium esse ratione rerum dolorem cupiditate facere, saepe consequuntur corporis eaque?</p>
+      </article> 
     </section>
-    <section class="work">
 
-    </section>
-    <section class="work">
-
-    </section>
-    <section class="work">
-
-    </section>
-    <section class="work">
-
+    <!-- WORK  -->
+    <section class="work-bx">
+      <aside class="sidebar-work">
+        <h1 class="aside-h1">Work</h1>  
+      </aside>
+      <!-- WORK PROJECTS DISPLAY -->
+      <article class="work-container"> 
+        <section class="work big-tile">
+          <img src="" alt="">
+          <h3>Project 1</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, id unde? Fuga harum explicabo necessitatibus? Nulla est possimus animi repellat impedit aliquid autem, fugiat facere voluptas ut corrupti quam. Voluptatem?</p>
+        </section>
+        <section class="work small-tile">
+          <img src="" alt="">
+          <h3>Project 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam id veritatis iure dignissimos earum minus quo quis sapiente! Numquam iusto aliquam nulla debitis deleniti accusamus doloribus dolores, perferendis veritatis!</p>
+        </section>
+        <section class="work small-tile">
+          <img src="" alt="">
+          <h3>Project 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate eaque ducimus culpa obcaecati, in dolores, autem error optio repudiandae officiis inventore, maiores incidunt numquam. Rerum magni soluta officiis esse?</p>
+        </section>
+        <section class="work small-tile">
+          <img src="" alt="">
+          <h3>Project 4</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime deserunt reiciendis corporis minima incidunt quae illo ipsam nemo quasi explicabo, deleniti aperiam iusto vero culpa amet pariatur? Libero, provident!</p>
+        </section>
+        <section class="work small-tile">
+          <img src="" alt="">
+          <h3>Project 5</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime deserunt reiciendis corporis minima incidunt quae illo ipsam nemo quasi explicabo, deleniti aperiam iusto vero culpa amet pariatur? Libero, provident!</p>
+        </section>
+      </article>
     </section>
   </main>
-  <aside>
-    <!-- CONTACT ME SIDBAR DISPLAY -->
-    <h1>Contact Me</h1>
-  </aside>
-  <!-- CONTACT ME MAIN CONTENT -->
-  <section>
-    <ul>
-      <li>123.456.7890</li>
-      <li>website link</li>
-      <li>GitHub</li>
-      <li>Twitter</li>
-      <li>Spotify</li>
-    </ul>
-  </section>
+  <footer>
+    <!-- FOOTER CONTAINER -->
+    <aside>
+      <h1 class="aside-h1">Contact Me</h1>
+    </aside>
+    <section>
+      <ul>
+        <li>123.456.7890</li>
+        <li>website link</li>
+        <li>GitHub</li>
+        <li>Twitter</li>
+        <li>Spotify</li>
+      </ul>
+    </section>
+  </footer>
 </body>
 </html>

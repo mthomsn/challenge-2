@@ -1,0 +1,99 @@
+* {
+
+}
+
+:root {
+  --blue: #92cbce;
+  --grey: #32343d;
+  --darkBlue: #445875;
+}
+
+/* HEADER -----------------------------------------------------*/
+  .header {
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    max-height: 100px;
+  }
+
+  .header h1 {
+    background-color: var(--blue);
+    color: var(--grey);
+    padding: 5px 7px 5px 40px;
+  }
+
+  .nav-bar {
+    display: flex;
+    color: var(--blue);
+    padding: 14px 20px;
+  }
+
+  .nav-bar a {
+    text-decoration: inherit;
+    font-size: 18px;
+    color: inherit;
+    margin: 15px 10px;
+    border-bottom: var(--blue) solid 3px;
+  }
+
+  .nav-bar section {
+    align-items: flex-end;
+    display: flex;
+  }
+
+/* MAIN CONTAINER -----------------------------------------------*/
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .work {
+    max-width: 50%;
+  }
+
+  .big-tile {
+   flex: 0 0 100%; /* flex-grow, flex-shrink, flex-basis */
+  }
+
+  .small-tile {
+    flex: 0 0 50%;
+  }
+
+/* PROJECTS CONTAINER -----------------------------------------*/
+  .work-bx {
+    display: flex;
+  }
+
+  .work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+/* SIDEBAR -----------------------------------------------------*/
+  #aboutme-bx {
+    display: flex;
+  }
+
+  aside {
+    display: flex;
+    margin: 18px;
+    min-width: 300px;
+    border-right: var(--darkBlue) solid 4px;
+    color: var(--darkBlue);
+    justify-content: right;
+  }
+
+  .sidebar-work {
+    flex: auto;
+  }
+
+  .aside-h1 {
+    text-align: right;
+  }
+
+/* FOOTER -----------------------------------------------------*/
+  footer {
+    display: flex;
+  }
