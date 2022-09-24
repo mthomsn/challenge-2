@@ -5,67 +5,85 @@
 :root {
   --blue: #92cbce;
   --grey: #32343d;
+  --darkBlue: #445875;
 }
 
-.header {
-  background-color: var(--grey);
-  display: flex;
-  justify-content: space-between;
-  max-height: 100px;
-}
+/* HEADER -----------------------------------------------------*/
+  .header {
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    max-height: 100px;
+  }
 
-.header h1 {
-  background-color: var(--blue);
-  color: var(--grey);
-  padding: 5px 7px 5px 40px;
-}
+  .header h1 {
+    background-color: var(--blue);
+    color: var(--grey);
+    padding: 5px 7px 5px 40px;
+  }
 
-.nav-bar {
-  display: flex;
-  color: var(--blue);
-  padding: 14px 20px;
-}
+  .nav-bar {
+    display: flex;
+    color: var(--blue);
+    padding: 14px 20px;
+  }
 
-.nav-bar a {
-  text-decoration: inherit;
-  font-size: 18px;
-  color: inherit;
-  margin: 15px 10px;
-  border-bottom: var(--blue) solid 3px;
-}
+  .nav-bar a {
+    text-decoration: inherit;
+    font-size: 18px;
+    color: inherit;
+    margin: 15px 10px;
+    border-bottom: var(--blue) solid 3px;
+  }
 
-.nav-bar section {
-  align-items: flex-end;
-  display: flex;
-}
+  .nav-bar section {
+    align-items: flex-end;
+    display: flex;
+  }
 
-.main-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
+/* MAIN CONTAINER -----------------------------------------------*/
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 
-#aboutme-bx {
-  display: flex;
-}
+  .work-container {
+    display: flex;
+  }
 
-#work-bx {
-  display: flex;
-}
+/* SIDEBAR -----------------------------------------------------*/
+  #aboutme-bx {
+    display: flex;
+  }
 
-.sidebar-work {
-  flex: auto;
-}
+  aside {
+    display: flex;
+    margin: 18px;
+    min-width: 300px;
+    border-right: var(--darkBlue) solid 4px;
+    color: var(--darkBlue);
+    justify-content: right;
+  }
 
-.work-container {
-  display: flex;
+  .sidebar-work {
+    flex: auto;
+  }
 
-}
+  .aside-h1 {
+    text-align: right;
+  }
 
-aside {
-  min-width: 300px;
-}
+/* PROJECTS CONTAINER -----------------------------------------*/
+  #work-bx {
+    display: flex;
+  }
 
-footer {
-  display: flex;
-}
+  .work-container {
+    display: flex;
+  }
+
+/* FOOTER -----------------------------------------------------*/
+  footer {
+    display: flex;
+  }
