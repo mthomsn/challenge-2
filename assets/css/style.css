@@ -45,8 +45,27 @@
   justify-content: flex-start;
 }
 
+#aboutme-bx {
+  display: flex;
+}
 
+#work-bx {
+  display: flex;
+}
+
+.sidebar-work {
+  flex: auto;
+}
+
+.work-container {
+  display: flex;
+
+}
 
 aside {
   min-width: 300px;
+}
+
+footer {
+  display: flex;
 }
