@@ -8,7 +8,11 @@
   --darkBlue: #445875;
 }
 
-/* HEADER -----------------------------------------------------*/
+h1 {
+  margin: 0.67rem;
+}
+
+/*  -------------------------- HEADER */
   .header {
     background-color: var(--grey);
     display: flex;
@@ -58,13 +62,35 @@
 
   }
 
-/* MAIN CONTAINER -----------------------------------------------*/
+/* --------------------- MAIN CONTAINER */
   .main-container {
     display: flex;
     flex-wrap: wrap;
   }
 
-/* PROJECTS CONTAINER -----------------------------------------*/
+  /* -------------------------- SIDEBAR */
+    #aboutme-bx {
+      display: flex;
+    }
+
+    aside {
+      display: flex;
+      margin: 18px;
+      min-width: 250px;
+      border-right: var(--darkBlue) solid 4px;
+      color: var(--darkBlue);
+      justify-content: right;
+    }
+
+    .sidebar-work {
+      flex: auto;
+    }
+
+    .aside-h1 {
+      text-align: right;
+    }
+
+/* -------------------- PROJECTS CONTAINER */
   .work-bx {
     display: flex;
   }
@@ -86,29 +112,9 @@
   .small-tile {
     flex: 0 0 45%;
   }
-/* SIDEBAR -----------------------------------------------------*/
-  #aboutme-bx {
-    display: flex;
-  }
 
-  aside {
-    display: flex;
-    margin: 18px;
-    min-width: 250px;
-    border-right: var(--darkBlue) solid 4px;
-    color: var(--darkBlue);
-    justify-content: right;
-  }
 
-  .sidebar-work {
-    flex: auto;
-  }
-
-  .aside-h1 {
-    text-align: right;
-  }
-
-/* FOOTER -----------------------------------------------------*/
+/* -------------------------- FOOTER */
   footer {
     display: flex;
   }
