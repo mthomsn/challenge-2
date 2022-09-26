@@ -36,6 +36,12 @@
     border-bottom: var(--blue) solid 3px;
   }
 
+  .nav-bar a:hover {
+    background-color: var(--blue);
+    color: var(--grey);
+    
+  }
+
   .nav-bar section {
     align-items: flex-end;
     display: flex;
