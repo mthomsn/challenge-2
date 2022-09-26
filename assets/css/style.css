@@ -106,13 +106,34 @@ h1 {
   }
 
   .big-tile {
-   flex: 0 0 93.5%; /* flex-grow, flex-shrink, flex-basis */
+    min-height: 500px;
+    flex: 0 0 93.5%; /* flex-grow, flex-shrink, flex-basis */
   }
 
   .small-tile {
     flex: 0 0 45%;
   }
 
+  /* i don't have any real projects to link here yet, so i'm just using placeholders for now */
+  .project-1 {
+    background-image: url(https://via.placeholder.com/500);
+  }
+
+  .project-2 {
+    background-image: url(https://via.placeholder.com/170x480);
+  }
+
+  .project-3 {
+    background-image: url(https://via.placeholder.com/170x480);
+  }
+
+  .project-4 {
+    background-image: url(https://via.placeholder.com/170x480);
+  }
+
+  .project-5 {
+    background-image: url(https://via.placeholder.com/170x480);
+  }
 
 /* -------------------------- FOOTER */
   footer {
