@@ -72,10 +72,11 @@
   .project-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .work {
     border: 5px solid var(--blue);
-    margin: 8px;
+    margin: 8px 0px;
   }
 
   .big-tile {
