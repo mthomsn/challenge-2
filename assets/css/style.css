@@ -64,8 +64,8 @@ h1 {
 
   .banner-cap {
     position: absolute;
-    right: 60px;
-    top: 195px;
+    right: 36px;
+    top: 178px;
     background-color: var(--blue);
     color: var(--grey);
   }
@@ -159,7 +159,7 @@ h1 {
     opacity: 73%;
   }
 
-  /* i don't have any real projects to link here yet, so i'm just using placeholders for now */
+  /* i don't have any real projects to link here yet, so i'm just using placeholder images for now */
   .project-1 {
     background-image: url(https://via.placeholder.com/500);
   }
@@ -203,4 +203,42 @@ h1 {
     margin: 15px 10px;
     border-bottom: var(--blue) solid 3px;
     font-size: larger;
+  }
+
+  /* resizing for different screen sizes */
+@media screen and (max-width: 414px) {
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .nav-bar  section {
+    position: relative;
+    top: -27px;
+    z-index: 1;
+  }
+
+  #aboutme-bx {
+    flex-direction: column;
+  }
+  
+  .work-bx {
+    flex-direction: column;
+  }
+
+  .banner-cap {
+    right: 12px;
+    top: 207px;
+  }
+
+  aside {
+    justify-content: center;
+    border-right: none;
+    border-bottom: var(--darkBlue) 3px solid;
+  }
+
+  .werk {
+    justify-content: center;
+  }
+    
   }
