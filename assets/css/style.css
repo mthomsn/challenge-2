@@ -111,3 +111,23 @@
   footer {
     display: flex;
   }
+
+  footer section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-bar {
+    justify-content: space-around;
+    width: 1000px;
+  }
+
+  .contact-bar a {
+    text-decoration: inherit;
+    font-size: 18px;
+    color: inherit;
+    margin: 15px 10px;
+    border-bottom: var(--blue) solid 3px;
+    font-size: larger;
+  }
