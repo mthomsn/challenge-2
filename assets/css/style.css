@@ -80,6 +80,10 @@ h1 {
     flex-wrap: wrap;
   }
 
+  .about-me {
+    margin-left: 20px;
+  }
+
   /* -------------------------- SIDEBAR */
     #aboutme-bx {
       display: flex;
