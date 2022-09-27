@@ -100,7 +100,6 @@ h1 {
 
     .sidebar-work {
       flex: auto;
-      max-width: fit-content;
     }
 
     .aside-h1 {
@@ -128,7 +127,7 @@ h1 {
 
   .big-tile {
     min-height: 500px;
-    flex: 0 0 93.5%; /* flex-grow, flex-shrink, flex-basis */
+    flex: 0 0 93.5%; 
   }
 
   .small-tile {
@@ -205,8 +204,8 @@ h1 {
     font-size: larger;
   }
 
-  /* resizing for different screen sizes */
-@media screen and (max-width: 414px) {
+  /* --- IPHONE XR SCREEN SIZING --- */
+@media screen and (max-width: 415px) {
 
   .header {
     flex-wrap: wrap;
@@ -215,6 +214,7 @@ h1 {
   .nav-bar  section {
     position: relative;
     top: -27px;
+    left: 18px;
     z-index: 1;
   }
 
@@ -224,6 +224,7 @@ h1 {
   
   .work-bx {
     flex-direction: column;
+    justify-content: center;
   }
 
   .banner-cap {
@@ -237,8 +238,16 @@ h1 {
     border-bottom: var(--darkBlue) 3px solid;
   }
 
-  .werk {
-    justify-content: center;
+  footer {
+    flex-direction: column;
+  }
+
+  .contact-bar {
+    max-width: 414px;
   }
     
+  .big-tile {
+    min-height: 300px;
+  }
+
   }
