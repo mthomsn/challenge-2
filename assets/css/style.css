@@ -1,18 +1,11 @@
-* {
-
-}
-
+/* general color variables */
 :root {
   --blue: #92cbce;
   --grey: #32343d;
   --darkBlue: #445875;
 }
 
-h1 {
-  margin: 0.67rem;
-}
-
-/*  -------------------------- HEADER */
+/* --- HEADER --- */
   .header {
     background-color: var(--grey);
     display: flex;
@@ -27,13 +20,14 @@ h1 {
     margin-left: 0;
   }
 
+  /* --- header nav bar --- */
   .nav-bar {
     display: flex;
     color: var(--blue);
     padding: 14px 20px;
   }
 
-  .nav-bar a {
+  .nav-bar a { /* added in inherit values to remove classic hyperlink formatting */
     text-decoration: inherit;
     font-size: 18px;
     color: inherit;
@@ -44,7 +38,7 @@ h1 {
   .nav-bar a:hover {
     background-color: var(--blue);
     color: var(--grey);
-    
+    /* would have liked to have created a transition here starting from the bottom of the box */
   }
 
   .nav-bar section {
@@ -52,16 +46,18 @@ h1 {
     display: flex;
   }
 
-  figure {
-    margin: 0;
+/* --- BANNER --- */
+  figure { 
+    margin: 0; 
   }
 
   #banner img {
-    width: 100vw;
-    height: 18vh;
+    width: 100vw; /* makes image banner take up whole width of screen */
+    height: 16vh;
     object-fit: cover;
   }
 
+  /* blue caption box in banner image */
   .banner-cap {
     position: absolute;
     right: 36px;
@@ -74,17 +70,17 @@ h1 {
     margin: 10px;
   }
 
-/* --------------------- MAIN CONTAINER */
+/* --- MAIN CONTAINER --- */
   .main-container {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .about-me {
-    margin-left: 20px;
-  }
-
-  /* -------------------------- SIDEBAR */
+  /* --- aside section --- */
+    .about-me {
+      margin-left: 20px;
+    }
+  
     #aboutme-bx {
       display: flex;
     }
@@ -98,88 +94,83 @@ h1 {
       justify-content: right;
     }
 
-    .sidebar-work {
-      flex: auto;
+    aside h1 {
+      margin: 0.67rem; /* added to give headers in sidebar space */
     }
 
-    .aside-h1 {
+    /* not sure why i added this, but keeping incase code breaks later */
+    /* .sidebar-work {
+      flex: auto; 
+    } */
+
+    /* another redundant piece of code, keeping incase code breaks later */
+    /* .aside-h1 {
       text-align: right;
+    } */
+
+  /* --- project container --- */
+    .work-bx { /* side bar + project container */
+      display: flex;
+      width: 100%;
     }
 
-/* -------------------- PROJECTS CONTAINER */
-  .work-bx {
-    display: flex;
-    width: 100%;
-  }
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    .work {
+      display: flex;
+      border: 5px solid var(--blue);
+      margin: 8px 0px;
+      background-color: yellow;
+    }
 
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-  .work {
-    display: flex;
-    border: 5px solid var(--blue);
-    margin: 8px 0px;
-    background-color: yellow;
-  }
+    .big-tile { /* making larger container */
+      flex: 0 0 93.5%; 
+      min-height: 500px;
+    }
 
-  .big-tile {
-    min-height: 500px;
-    flex: 0 0 93.5%; 
-  }
+    .small-tile {
+      flex: 0 0 45%;
+      height: 150px;
+    }
 
-  .small-tile {
-    flex: 0 0 45%;
-    height: 150px;
-  }
+    .project-header-tag { /* blue boxes in the bottom left of project tiles */
+      align-self: flex-end;
+      background-color: var(--blue);
+      color: var(--grey);
+      margin-bottom: 10px;
+      padding: 10px;
+    }
 
-  .project-header-tag {
-    align-self: flex-end;
-    background-color: var(--blue);
-    color: var(--grey);
-    margin-bottom: 10px;
-    padding: 10px;
-  }
+    .project-header-tag h3 { 
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
 
-  .project-header-tag h3 {
-    margin-bottom: 0;
-    margin-top: 5px;
-  }
+    .project-header-tag p {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      margin-bottom: 5px;
+    }
 
-  .project-header-tag p {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-bottom: 5px;
-  }
+    .work:hover {
+      opacity: 73%;
+    }
 
-  .work:hover {
-    opacity: 73%;
-  }
+    /* i don't have any real projects to link here yet, so i'm just using placeholder images for now
+    when i do have projects to upload i will make the project tiles clickable by nesting them in anchor tags */
+    .project-1 {
+      background-image: url(https://via.placeholder.com/500);
+    }
 
-  /* i don't have any real projects to link here yet, so i'm just using placeholder images for now */
-  .project-1 {
-    background-image: url(https://via.placeholder.com/500);
-  }
+    .project-2, .project-3, .project-4, .project-5 {
+      background-image: url(https://via.placeholder.com/100);
+    }
 
-  .project-2 {
-    background-image: url(https://via.placeholder.com/100);
-  }
-
-  .project-3 {
-    background-image: url(https://via.placeholder.com/100);
-  }
-
-  .project-4 {
-    background-image: url(https://via.placeholder.com/100);
-  }
-
-  .project-5 {
-    background-image: url(https://via.placeholder.com/100);
-  }
-
-/* -------------------------- FOOTER */
+/* --- FOOTER ---*/
   footer {
     display: flex;
   }
@@ -204,50 +195,54 @@ h1 {
     font-size: larger;
   }
 
-  /* --- IPHONE XR SCREEN SIZING --- */
-@media screen and (max-width: 415px) {
+/* --- IPHONE XR SCREEN SIZING --- */
+/* since i have an iphone xr, that is why i chose to practice resizing screen to that size
+in the future i would like to optimize for additional desktop and phone screen sizes */
+  @media screen and (max-width: 415px) {
 
-  .header {
-    flex-wrap: wrap;
-  }
+  /* --- XR HEADER --- */
+    .header {
+      flex-wrap: wrap;
+    }
 
-  .nav-bar  section {
-    position: relative;
-    top: -27px;
-    left: 18px;
-    z-index: 1;
-  }
+    .nav-bar  section {
+      position: relative;
+      top: -27px;
+      left: 18px;
+      z-index: 1;
+    }
 
-  #aboutme-bx {
-    flex-direction: column;
-  }
-  
-  .work-bx {
-    flex-direction: column;
-    justify-content: center;
-  }
+    .banner-cap {
+      right: 12px;
+      top: 207px;
+    }
 
-  .banner-cap {
-    right: 12px;
-    top: 207px;
-  }
-
-  aside {
-    justify-content: center;
-    border-right: none;
-    border-bottom: var(--darkBlue) 3px solid;
-  }
-
-  footer {
-    flex-direction: column;
-  }
-
-  .contact-bar {
-    max-width: 414px;
-  }
+  /* --- XR MAIN CONTAINER --- */
+    #aboutme-bx {
+      flex-direction: column;
+    }
     
-  .big-tile {
-    min-height: 300px;
-  }
+    .work-bx {
+      flex-direction: column;
+      justify-content: center;
+    }
 
-  }
+    aside {
+      justify-content: center;
+      border-right: none;
+      border-bottom: var(--darkBlue) 3px solid;
+    }
+
+    .big-tile {
+        min-height: 300px;
+      }
+
+  /* --- XR FOOTER --- */
+    footer {
+      flex-direction: column;
+    }
+
+    .contact-bar {
+      max-width: 414px;
+    }
+}
