@@ -130,6 +130,7 @@
     .big-tile { /* making larger container */
       flex: 0 0 93.5%; 
       min-height: 500px;
+      
     }
 
     .small-tile {
